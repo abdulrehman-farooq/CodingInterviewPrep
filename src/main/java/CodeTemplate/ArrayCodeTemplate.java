@@ -4,7 +4,6 @@ import java.util.*;
 
 public class ArrayCodeTemplate {
     public static void main(String[] args) {
-
         /*
          * One Dimensional Array Code Template
          *
@@ -56,8 +55,6 @@ public class ArrayCodeTemplate {
         for (Integer[] integers : intervals2) {
             intervalsList.add(Arrays.asList(integers));
         }
-
-
-
     }
 }
+

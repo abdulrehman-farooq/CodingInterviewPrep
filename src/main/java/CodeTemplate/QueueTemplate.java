@@ -1,6 +1,8 @@
 package CodeTemplate;
 
+import java.util.Comparator;
 import java.util.LinkedList;
+import java.util.PriorityQueue;
 import java.util.Queue;
 
 public class QueueTemplate {
@@ -37,6 +39,12 @@ public class QueueTemplate {
         System.out.println("Size of queue-"
                 + size);
 
+        PriorityQueue<Integer> p = new PriorityQueue<Integer>(new Comparator<Integer>() {
+            @Override
+            public int compare(Integer o1, Integer o2) {
+                return o2 - o1;
+            }
+        });
 
 
     }

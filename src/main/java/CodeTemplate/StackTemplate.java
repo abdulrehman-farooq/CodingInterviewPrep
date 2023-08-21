@@ -37,12 +37,7 @@ public class StackTemplate {
         System.out.println("Stack size operation "
                 + stack.size());
 
-        PriorityQueue<Integer> p = new PriorityQueue<Integer>(new Comparator<Integer>() {
-            @Override
-            public int compare(Integer o1, Integer o2) {
-                return 0;
-            }
-        });
+
 
     }
 }
