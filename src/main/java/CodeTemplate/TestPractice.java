@@ -13,17 +13,6 @@ public class TestPractice {
          * 4. Convert Array To List
          */
 
-        Integer[] oneDArray = new Integer[]{55, 3, 66, 8, 9, 0};
-        Arrays.sort(oneDArray);
-        Arrays.sort(oneDArray, Collections.reverseOrder());
-        List<Integer> oneDArrayList = Arrays.asList(oneDArray);
-
-        Arrays.sort(oneDArray, new Comparator<Integer>() {
-            @Override
-            public int compare(Integer a, Integer b) {
-                return a - b;
-            }
-        });
 
         /*
          * Two Dimensional Arrays
@@ -33,23 +22,6 @@ public class TestPractice {
          * 4. Convert Array To List
          */
 
-        Integer[][] twoDArray = new Integer[][]{
-                {55, 3, 66},
-                {8, 9, 0}};
-        Arrays.sort(twoDArray);
-        Arrays.sort(twoDArray, Collections.reverseOrder());
-        Arrays.sort(twoDArray, new Comparator<Integer[]>() {
-            @Override
-            public int compare(Integer[] a, Integer[] b) {
-                return a[0] - b[0];
-            }
-        });
-
-
-        List<List<Integer>> intervalsList = new ArrayList<List<Integer>>();
-        for (Integer[] integers : twoDArray) {
-            intervalsList.add(Arrays.asList(integers));
-        }
 
 
         /*
@@ -62,15 +34,7 @@ public class TestPractice {
          * 5. Convert List To Array
          */
 
-        List<Integer> arrayList = Arrays.asList(55, 3, 66, 8, 9, 0);
-        Collections.sort(arrayList);
-        Collections.sort(arrayList, Collections.reverseOrder());
-        Collections.sort(arrayList, new Comparator<Integer>() {
-            @Override
-            public int compare(Integer o1, Integer o2) {
-                return o1 - o2;
-            }
-        });
+       ;
 
 
 
@@ -129,7 +93,20 @@ public class TestPractice {
         /*
          * Queue
          * 1. Build a int queue push and pop values
-         * 2. Build a priority queue add and pop values add
+         *
+         */
+
+
+        /*
+         * Max Heap
+         * 1. Build a max heap
+         *
+         */
+
+
+        /*
+         * Queue
+         * Build a min heap
          *
          */
 
