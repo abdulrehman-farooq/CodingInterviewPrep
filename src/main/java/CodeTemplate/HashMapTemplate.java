@@ -24,6 +24,10 @@ public class HashMapTemplate {
      }
 
      /*** convrting map to array **/
-        List<String> list = new ArrayList<>(map.values());
+     List<String> list = new ArrayList<>(map.values());
+
+     /** Coparing map to array **/
+     HashMap<Integer,String> CompareMap = new HashMap<Integer,String>();
+     map.equals(CompareMap);
     }
 }

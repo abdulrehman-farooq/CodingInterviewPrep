@@ -15,7 +15,6 @@ public class StringBuilderTemplate {
         for (int i=0; i< strB.length(); i++){
             System.out.println(strB.charAt(i));
         }
-
         strB.replace(0,1,"T");
         System.out.println(strB);
 

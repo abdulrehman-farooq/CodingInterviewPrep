@@ -1,0 +1,138 @@
+package CodeTemplate;
+
+import java.util.*;
+
+public class TestPractice {
+    public static void main(String[] args) {
+
+        /*
+         * One Dimensional Arrays
+         * 1. Initialize a non-primitive 1D array with values 55, 3, 66, 8, 9, 0
+         * 2. Sort it in ascending order
+         * 3. Sort it in descending order
+         * 4. Convert Array To List
+         */
+
+        Integer[] oneDArray = new Integer[]{55, 3, 66, 8, 9, 0};
+        Arrays.sort(oneDArray);
+        Arrays.sort(oneDArray, Collections.reverseOrder());
+        List<Integer> oneDArrayList = Arrays.asList(oneDArray);
+
+        Arrays.sort(oneDArray, new Comparator<Integer>() {
+            @Override
+            public int compare(Integer a, Integer b) {
+                return a - b;
+            }
+        });
+
+        /*
+         * Two Dimensional Arrays
+         * 1. Initialize a non-primitive 2D array with values [55, 3, 66],[ 8, 9, 0]
+         * 2. Sort it in ascending order and descending order
+         * 3. write a custom array values
+         * 4. Convert Array To List
+         */
+
+        Integer[][] twoDArray = new Integer[][]{
+                {55, 3, 66},
+                {8, 9, 0}};
+        Arrays.sort(twoDArray);
+        Arrays.sort(twoDArray, Collections.reverseOrder());
+        Arrays.sort(twoDArray, new Comparator<Integer[]>() {
+            @Override
+            public int compare(Integer[] a, Integer[] b) {
+                return a[0] - b[0];
+            }
+        });
+
+
+        List<List<Integer>> intervalsList = new ArrayList<List<Integer>>();
+        for (Integer[] integers : twoDArray) {
+            intervalsList.add(Arrays.asList(integers));
+        }
+
+
+        /*
+         * One Dimensional Array
+         *
+         * 1. Initialize 1D List with values 55, 3, 66, 8, 9, 0
+         * 2. Sort it in ascending order
+         * 3. Sort it in descending order
+         * 4. Sort it ascending order but values divisible by 2 should be sorted first
+         * 5. Convert List To Array
+         */
+
+        List<Integer> arrayList = Arrays.asList(55, 3, 66, 8, 9, 0);
+        Collections.sort(arrayList);
+        Collections.sort(arrayList, Collections.reverseOrder());
+        Collections.sort(arrayList, new Comparator<Integer>() {
+            @Override
+            public int compare(Integer o1, Integer o2) {
+                return o1 - o2;
+            }
+        });
+
+
+
+
+
+        /*
+         * Cast 0, a, and  A to int all converted to 1
+         * Cast Integer 12 to String
+         * Cast String "12" to int
+         */
+
+        /*
+         * One Dimensional List
+         *
+         * 1. Initialize 1D List with values 55, 3, 66, 8, 9, 0
+         * 2. Sort it in ascending order
+         * 3. Sort it in descending order
+         * 4. Sort it ascending order but values divisible by 2 should be sorted first
+         * 5. Convert List To Array
+         */
+
+
+
+
+
+        /*
+         * Hashmap
+         * 1. Hashmap Build a hashmap add few key, remove keys and compare with other fields
+         *
+         */
+
+
+
+        /*
+         * Stack
+         * 1. Add few values, remove few values, remove some values
+         */
+
+
+
+        /*
+         *  String Builder
+         *  1. Build a string remove tailing string delete character and append character.
+         *  2/ Replace String
+         */
+
+
+        /*
+         * Sets
+         * 1. Build a int hash set add values and remove values
+         * 2. Build a hash set from the list
+         *
+         */
+
+
+        /*
+         * Queue
+         * 1. Build a int queue push and pop values
+         * 2. Build a priority queue add and pop values add
+         *
+         */
+
+
+    }
+}
