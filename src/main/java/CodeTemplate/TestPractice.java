@@ -92,8 +92,11 @@ public class TestPractice {
 
         /*
          * Queue
-         * 1. Build a int queue push and pop values
-         *
+         * 1. Build a int queue
+         * 2. Add Values to the queue
+         * 3. Remove values from the queue
+         * 4. view the head of queue
+         * 5. Keep poping the queue until empty
          */
 
 
