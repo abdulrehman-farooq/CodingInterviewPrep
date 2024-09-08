@@ -12,7 +12,8 @@ public class TestPractice {
          * 3. Sort it in descending order
          * 4. Convert Array To List
          */
-
+          
+          Integer[] array = {1,2,3,45,6}
 
         /*
          * Two Dimensional Arrays
